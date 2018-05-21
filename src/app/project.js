@@ -17,7 +17,7 @@ let projects = [{
     name:"name3",
     desc: "Minim id veniam sit aute nisi anim occaecat. Laborum ad voluptate id laborum aliqua enim in nulla voluptate cupidatat culpa in nisi. Labore proident adipisicing occaecat est anim sit. Eiusmod duis commodo velit eu. Consequat commodo do minim sunt fugiat aliquip nisi proident consequat. Excepteur cupidatat do ea sunt ullamco eiusmod et laborum. Sint incididunt laborum nisi eu ad.",
     link: "http://google.com",
-    pic: "picture"
+    pic: "https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350"
 }]
 
 class ProjectPage extends React.Component {
@@ -46,7 +46,7 @@ class Project extends React.Component {
                 <h2>{this.props.name}</h2>
                 <p>{this.props.desc}</p>
                 <a href={this.props.link}>Link to it</a>
-                <p>{this.props.pic}</p>
+                <img src={this.props.pic}/>
             </div>
         )
     }
