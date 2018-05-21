@@ -1,4 +1,5 @@
 let React = require('react');
+let css = require('./css/project.css');
 import { Link } from 'react-router-dom';
 let projects = [{
     name: "name",

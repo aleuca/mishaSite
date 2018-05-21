@@ -1,7 +1,7 @@
 let React = require('react');
 import { Link } from 'react-router-dom';
 
-class HomePage extends React.Component {
+class Home extends React.Component {
     render() {
         return(
             <div>
@@ -11,4 +11,6 @@ class HomePage extends React.Component {
     }
 }
 
-module.exports = HomePage
+
+
+module.exports = Home

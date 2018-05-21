@@ -1,18 +1,25 @@
 let React = require('react');
 let css = require('./css/nav.css');
 
+
 class NavBar extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return(
-            <div class='nav'>
-                <ul class='nav-bar'>
-                    <a class='nav-element' href='/'>Home</a>
-                    <a class='nav-element' href='/about'>About</a>
-                    <a class='nav-element' href='projects'>Projects</a>
-                    <a class='nav-element' href='http://linkedin.com'>Linkedin</a>
-                    <a class='nav-element' href='http://github.com'>Github</a>
-                    <a class='nav-element' href='http://facebook.com'>Facebook</a>
-                </ul>
+            <div>
+                <nav>
+                    <ul class='nav'>
+                        <li class='internal'><a class='nav-element home' href='/'>Home</a></li>
+                        <li class='internal'><a class='nav-element about' href='/about'>About</a></li>
+                        <li class='internal'><a class='nav-element projects' href='projects'>Projects</a></li>
+                        <li class='external'><a class='nav-element linkedin' href='http://linkedin.com'>Linkedin</a></li>
+                        <li class='external'><a class='nav-element github' href='http://github.com'>Github</a></li>
+                        <li class='external'><a class='nav-element facebook' href='http://facebook.com'>Facebook</a></li>
+                    </ul>
+                </nav>
             </div>
         )
     }
