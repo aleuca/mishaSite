@@ -7,7 +7,6 @@ class Home extends React.Component {
             <div>
                 <h2>Home page</h2>
             </div>
-            
         );
     }
 }
