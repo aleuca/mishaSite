@@ -5,10 +5,10 @@ import { BrowserRouter, Router, Route, Switch, Link } from 'react-router-dom';
 
 // modules
 
-let HomeComponent = require('./home');
-let AboutComponent = require('./about');
-let ProjectComponent = require('./project');
-let NavBarComponent = require('./nav');
+let Home = require('./home');
+let About = require('./about');
+let ProjectPage = require('./project');
+let NavBar = require('./nav');
 
 
 
@@ -16,15 +16,14 @@ class App extends React.Component {
     render() {
         return(
             <div>
-                <NavBarComponent>
-                    <BrowserRouter>
-                        <Switch> 
-                            <Route exact path='/' component={HomeComponent}></Route>
-                            <Route exact path='/about' component={AboutComponent}></Route>
-                            <Route exact path='/projects' component={ProjectComponent}></Route>
-                        </Switch>
-                    </BrowserRouter> 
-                </NavBarComponent>   
+                <NavBar/>
+                <BrowserRouter>
+                    <Switch> 
+                        <Route exact path='/' component={Home}></Route>
+                        <Route exact path='/about' component={About}></Route>
+                        <Route exact path='/projects' component={ProjectPage}></Route>
+                    </Switch>
+                </BrowserRouter>
             </div>
         );
     }

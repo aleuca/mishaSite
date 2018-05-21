@@ -1,7 +1,7 @@
 let React = require('react');
 import { Link } from 'react-router-dom';
 
-class HomeComponent extends React.Component {
+class Home extends React.Component {
     render() {
         return(
             <div>
@@ -14,4 +14,4 @@ class HomeComponent extends React.Component {
 
 
 
-module.exports = HomeComponent
+module.exports = Home
