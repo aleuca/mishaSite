@@ -16,14 +16,15 @@ class App extends React.Component {
     render() {
         return(
             <div>
-                <BrowserRouter>
-                    <Switch> 
-                        <Route exact path='/' component={HomeComponent}></Route>
-                        <Route exact path='/about' component={AboutComponent}></Route>
-                        <Route exact path='/projects' component={ProjectComponent}></Route>
-                    </Switch>
-                </BrowserRouter> 
-                <NavBarComponent/>
+                <NavBarComponent>
+                    <BrowserRouter>
+                        <Switch> 
+                            <Route exact path='/' component={HomeComponent}></Route>
+                            <Route exact path='/about' component={AboutComponent}></Route>
+                            <Route exact path='/projects' component={ProjectComponent}></Route>
+                        </Switch>
+                    </BrowserRouter> 
+                </NavBarComponent>   
             </div>
         );
     }
