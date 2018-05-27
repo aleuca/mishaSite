@@ -29,7 +29,7 @@ class ProjectPage extends React.Component {
         const projectDiv = projects.map(project => <Project name={project.name} desc={project.desc} pic={project.pic} />)
 
         return(
-            <div>
+            <div className='container'>
                 <h1>These are my projects</h1>
                 <div>
                     {projectDiv}

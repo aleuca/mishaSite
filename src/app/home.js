@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom';
 class Home extends React.Component {
     render() {
         return(
-            <div>
-
+            <div className='homepage-body'>
+                {/* <img src={require('./css/images/bb8.jpeg')}/> */}
             </div>
         );
     }
