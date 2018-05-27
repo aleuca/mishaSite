@@ -1,4 +1,6 @@
-var path = require('path');
+let path = require('path');
+let images = require('file-loader');
+let urls = require('url-loader')
 
 module.exports = {
 
@@ -21,7 +23,11 @@ module.exports = {
             {
                 test: /\.css$/,
                 loader: 'style-loader!css-loader'
+            },
+            {
+                test:  /\.jpeg$/,
+                loader: 'url-loader'
             }
         ]
     }
-};
+}
