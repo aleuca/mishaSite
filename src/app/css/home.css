@@ -1,3 +1,4 @@
 body {
-    background: img('/images/bb8.jpeg');
+    background-image: url(./images/ac.jpeg);
+    background-size: cover;
 }
