@@ -9,6 +9,7 @@ let Home = require('./home');
 let About = require('./about');
 let ProjectPage = require('./project');
 let NavBar = require('./nav');
+let Admin = require('./admin');
 
 
 
@@ -22,6 +23,7 @@ class App extends React.Component {
                         <Route exact path='/' component={Home}></Route>
                         <Route exact path='/about' component={About}></Route>
                         <Route exact path='/projects' component={ProjectPage}></Route>
+                        <Route exact path='/admin' component={Admin}></Route>
                     </Switch>
                 </BrowserRouter>
             </div>

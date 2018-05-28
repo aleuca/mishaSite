@@ -1,6 +1,6 @@
 let React = require('react');
 let ReactDOM = require('react-dom');
-let css = require('./css/about.css');
+let css = require('./css/index.css');
 import { Link } from 'react-router-dom';
 
 class About extends React.Component {
