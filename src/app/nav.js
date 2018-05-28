@@ -1,5 +1,5 @@
 let React = require('react');
-let css = require('./css/nav.css');
+let css = require('./css/index.css');
 
 
 class NavBar extends React.Component {
