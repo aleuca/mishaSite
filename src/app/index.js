@@ -15,15 +15,18 @@ let Admin = require('./admin');
 
 class App extends React.Component {
     render() {
+        const routes = [
+            <Route exact path='/' component={Home}></Route>,
+            <Route exact path='/about' component={About}></Route>,
+            <Route exact path='/projects' component={ProjectPage}></Route>,
+            <Route exact path='/login' component={Admin}></Route>
+          ];
         return(
             <div>
                 <NavBar/>
                 <BrowserRouter>
                     <Switch> 
-                        <Route exact path='/' component={Home}></Route>
-                        <Route exact path='/about' component={About}></Route>
-                        <Route exact path='/projects' component={ProjectPage}></Route>
-                        <Route exact path='/admin' component={Admin}></Route>
+                        {routes}
                     </Switch>
                 </BrowserRouter>
             </div>

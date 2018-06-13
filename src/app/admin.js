@@ -7,16 +7,16 @@ class Admin extends React.Component {
     render() {
         return(
             <div>
-                <form>
+                <form className='form'>
                     <label>
                         Username:
-                        <input type="text" name="name" />
+                        <input className='form-input' type="text"/>
                     </label>
                     <label>
                         Password:
-                        <input type="text" name="name" />
+                        <input className='form-input' type="text"/>
                     </label>
-                    <input type="submit" value="Submit" /> 
+                        <input className='login-button' type="submit" value="Login" /> 
                 </form>
             </div>
         )
