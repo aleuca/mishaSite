@@ -1,11 +1,19 @@
 let React = require('react');
 let css = require('./css/index.css');
 import { Link } from 'react-router-dom';
+
+
+// in componentDidMount, use fs.readFileSync() to get projects from a .json file in api/projects.json
+// in the api, make routes for listing projects, creating projects, and updating projects
+// add a property to each project called "archived: true/false" which prevents it from being displayed
+    // until he's ready for it to be shown (or acts as a soft-delete)
+// protect these routes with authentication
+
 let projects = [{
     name: "name",
     desc: "Sunt anim cillum ullamco est tempor magna. Ea dolore nisi anim ea et proident ullamco esse sunt qui adipisicing velit. Incididunt dolore Lorem velit id duis reprehenderit consectetur consectetur eiusmod magna sit id nulla. Irure eu minim duis incididunt pariatur. Aliquip velit aliqua mollit minim pariatur laboris sunt Lorem minim fugiat laboris eu elit incididunt. Est voluptate pariatur enim tempor velit pariatur. Eu incididunt consectetur dolore dolore aliqua id aliquip esse velit ex ad et reprehenderit.",
     link: "http://google.com",
-    pic: "picture"
+    pic: "picture",
 },
 {
     name:"name2",
